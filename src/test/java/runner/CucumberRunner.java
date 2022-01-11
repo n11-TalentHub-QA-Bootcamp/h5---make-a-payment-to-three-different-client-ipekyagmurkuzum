@@ -1,5 +1,6 @@
 package runner;
 
+
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.cucumber.junit.CucumberOptions;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
@@ -9,25 +10,26 @@ import org.junit.runner.RunWith;
 
 import java.io.IOException;
 
+
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         features = "src/test/resources/features",
-        //tags ="@seach_film"
-        tags ="@favoritos"
+        glue = "steps",
+        tags = "@payment"
 )
 
-public class Runner {
+public class CucumberRunner {
     static AppiumDriverLocalService appiumService = null;
 
     @BeforeClass
     public static void startAppiumServer() throws IOException {
-       appiumService = AppiumDriverLocalService.buildDefaultService();
-      //   appiumService.start();
+        appiumService = AppiumDriverLocalService.buildDefaultService();
+        appiumService.start();
     }
 
     @AfterClass
     public static void stopAppiumServer() {
-     //   appiumService.stop();
+        appiumService.stop();
     }
 
 }
