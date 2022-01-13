@@ -15,7 +15,10 @@ import java.io.IOException;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "steps",
-        tags = "@payment"
+        tags = "@login"
+        //tags = "@payment"
+        //tags = "@paymentforthree"
+        //tags = "@paymentforeachcountry"
 )
 
 public class CucumberRunner {

@@ -29,5 +29,14 @@ public class PaymentPageElements {
             Target.the("i am sure button")
                     .located(By.id("android:id/button1"));
 
+    public static Target SELECT_BUTTON =
+            Target.the("select country button")
+                    .located(By.id("countryButton"));
+
+    public static Target SELECT_COUNTRY_LIST =
+            Target.the("select country list")
+                    .locatedBy("android.widget.TextView");
+
+
 }
 
