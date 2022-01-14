@@ -15,10 +15,10 @@ import java.io.IOException;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "steps",
-        tags = "@login"
+        //tags = "@login"
         //tags = "@payment"
         //tags = "@paymentforthree"
-        //tags = "@paymentforeachcountry"
+        tags = "@paymentforeachcountry"
 )
 
 public class CucumberRunner {
