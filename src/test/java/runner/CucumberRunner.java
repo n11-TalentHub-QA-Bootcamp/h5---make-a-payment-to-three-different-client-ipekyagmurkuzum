@@ -17,8 +17,8 @@ import java.io.IOException;
         glue = "steps",
         //tags = "@login"
         //tags = "@payment"
-        //tags = "@paymentforthree"
-        tags = "@paymentforeachcountry"
+        tags = "@paymentforthree"
+        //tags = "@paymentforeachcountry"
 )
 
 public class CucumberRunner {
